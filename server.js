@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const characters = require('./data/Characters')
 
 app.get("/", (request, response) => {
@@ -20,12 +20,10 @@ app.get("/api/:name", (request, response) => {
   } else {
     response.send(`Couldn't find a member of the X-Men named ${name}`)
   }
-
 });
 
 app.listen(PORT, () => {
   console.log(`Running on port: ${PORT}`);
 });
 
-// console.log(xmenData["iceman"])
 module.exports = app;
