@@ -1,19 +1,31 @@
 const express = require('express');
-const characters = require('marvel-api/lib/characters');
 const app = express();
 const PORT = 5000;
-const xmenData = require('./data/xmen')
+const characters = require('./data/Characters')
 
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "/index.html");
 });
 
 app.get("/api", (request, response) => {
-  response.json(xmenData)
+  response.json(characters)
+});
+
+app.get("/api/:name", (request, response) => {
+  const name = request.params.name;
+  const character = characters.find((char) => char.name === name);
+
+  if (character) {
+    response.send({character})
+  } else {
+    response.send(`Couldn't find a member of the X-Men named ${name}`)
+  }
+
 });
 
 app.listen(PORT, () => {
   console.log(`Running on port: ${PORT}`);
 });
 
+// console.log(xmenData["iceman"])
 module.exports = app;
