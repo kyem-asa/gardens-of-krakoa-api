@@ -1,6 +1,6 @@
 const characters = [
   {
-    name: "Professor X",
+    name: "professor x",
     "full name": "Charles Francis Xavier",
     alias: "Professor X",
     "team affiliation": [

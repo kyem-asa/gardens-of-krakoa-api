@@ -15,7 +15,7 @@ app.get("/api", (request, response) => {
 });
 
 app.get("/api/:name", (request, response) => {
-  const name = request.params.name;
+  const name = request.params.name.toLowerCase();
   const character = characters.find((char) => char.name === name);
 
   if (character) {
