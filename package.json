@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch server.js",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "dotenv": "^16.0.3",
+=======
+    "cors": "^2.8.5",
+>>>>>>> 7cafe09dc322f30f608e8da4947bdcbe911d226b
     "express": "^4.18.2",
     "mongodb": "^5.0.1",
     "mongoose": "^6.9.1"
