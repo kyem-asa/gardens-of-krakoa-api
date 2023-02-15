@@ -3,8 +3,12 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const characters = require('./data/Characters')
 const cors = require('cors')
+const characterController = require('./controllers/characters')
+
 
 app.use(cors());
+
+characterController.saveCharacters();
 
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "/index.html");

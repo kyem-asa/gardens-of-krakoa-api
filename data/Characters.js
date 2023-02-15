@@ -1,9 +1,9 @@
 const characters = [
   {
     name: "professor x",
-    "full name": "Charles Francis Xavier",
-    alias: "Professor X",
-    "team affiliation": [
+    fullName: "Charles Francis Xavier",
+    aliases: "Professor X",
+    teamAffiliations: [
       "X-Men",
       "Illuminati",
       "X-Corporation",
@@ -14,7 +14,7 @@ const characters = [
       "Brotherhood of Mutants",
       "Quiet council of Krakoa",
     ],
-    "first appearance": "X-Men (1st series) #1",
+    firstAppearance: "X-Men (1st series) #1",
     powers: [
       "Genius-level intellect",
       "Powerful psychic abilities, including ESP, telepathy, and mental-manipulation",
@@ -24,8 +24,8 @@ const characters = [
 
  {
          name: "cyclops",
-      "full name": "Scott Summers",
-      alias: "Cyclops",
+      fullName: "Scott Summers",
+      aliases: "Cyclops",
       affiliation: [
           "X-Men",
           "X-Force",
@@ -35,15 +35,15 @@ const characters = [
           "Hounds",
           "Starjammers",
       ],
-      "first appearance": "X-Men (1st series) #1",
+      firstAppearance: "X-Men (1st series) #1",
       powers: "Cyclops absorbs energy and compress it into concussive blasts that shoot from his eyes",
   },
 
  {
       name: "iceman",
-      "full name": "Nils Robert Louis 'Bobby' Drake",
-      alias: "Iceman",
-      "team affiliation": [
+      fullName: "Nils Robert Louis 'Bobby' Drake",
+      aliases: "Iceman",
+      teamAffiliations: [
           "X-Men",
           "X-Factor",
           "Champions",
@@ -51,7 +51,7 @@ const characters = [
           "Marauders",
           "Fantastic Four",
       ],
-      "first appearance": "X-Men (1st series) #1",
+      firstAppearance: "X-Men (1st series) #1",
       powers: [
         'Cryokinesis',
         'Hydrokinesis',
@@ -62,9 +62,9 @@ const characters = [
 
    {
        name: "beast",
-      "full name": "Dr. Henry Philip 'Hank' McCoy",
-      alias: ["Beast", "Kreature"],
-      "team affiliation": [
+      fullName: "Dr. Henry Philip 'Hank' McCoy",
+      aliases: ["Beast", "Kreature"],
+      teamAffiliations: [
           "X-Men",
           "Avengers",
           "Defenders",
@@ -72,21 +72,21 @@ const characters = [
           "Illuminati",
           "Secret Avengers",
       ],
-      "first appearance": "X-Men (1st series) #1",
+      firstAppearance: "X-Men (1st series) #1",
       powers: "Beast possesses a genius level intellect, superhuman strength, durability, speed, agility, dexterity , healing, and senses. ",
   },
 
    {
        name: "angel",
-      "full name": "Warren Kenneth Worthington III",
-       alias: [
+      fullName: "Warren Kenneth Worthington III",
+       aliases: [
           "Archangel",
           "Dark Angel",
           "Avenging Angel",
           "Death",
           "Master of the Seven Seeds",
       ],
-      "team affiliation": [
+      teamAffiliations: [
           "X-Men",
           "X-Force",
           "X-Club",
@@ -99,7 +99,7 @@ const characters = [
           "Cheyarafirm",
           "Jean Grey School Students ",
       ],
-      "first appearance": "Warren Kenneth Worthington III",
+      firstAppearance: "Warren Kenneth Worthington III",
       powers: {
           angel: "Angel possesses superhuman strength, stamina, durability, flight, regenerative healing, and aerial adaptation.",
           archangel: "Archangel possesses superhuman strength, durability, stamina, razor sharp and poisonous feather projection, regenerative healing, flight, metal wings, and aerial adaptation.",
@@ -107,8 +107,8 @@ const characters = [
   },
 
   { name: "marvel girl/phoenix",
-      "full name": "Jean Elaine Grey",
-      alias: [
+      fullName: "Jean Elaine Grey",
+      aliases: [
           "Marvel Girl",
           "Jean Grey Summers",
           "Phoenix",
@@ -116,7 +116,7 @@ const characters = [
           "White Phoenix of the Crown",
           "Redd Dayspring",
       ],
-      "team affiliation": [
+      teamAffiliations: [
           "X-Men",
           "X-Factor",
           "X-Force",
@@ -128,7 +128,7 @@ const characters = [
           "Clan Rebellion",
           "Seven Brides of Set",
       ],
-      "first appearance": "X-Men (1st series) #1",
+      firstAppearance: "X-Men (1st series) #1",
       powers: {
           "marvel girl": "Marvel Girl possesses empathic abilities to control, manipulate, and alter the emotions, feelings, and sensations of others, telepathic abilities such as mind control, mind linking, telepathic illusions, shields, and camouflage, telekinesis, and psychokinesis",
           "phoenix force": "As Phoenix, she possesses abilities to create and manipulate cosmic fire and matter, resurrection, teleportation, and immortality",
@@ -136,10 +136,10 @@ const characters = [
     },
 
        {  name: "nightcrawler",
-          "full name": "Kurt Wagner",
-          alias: "None",
-          "team affiliation": ["X-Men", "Excalibur", "Quiet Council of Krakoa"],
-          "first appearance": "Giant-Size X-Men #1",
+          fullName: "Kurt Wagner",
+          aliases: "None",
+          teamAffiliations: ["X-Men", "Excalibur", "Quiet Council of Krakoa"],
+          firstAppearance: "Giant-Size X-Men #1",
           powers: [
               "teleportation",
               "enhanced agility, flexibility, and night vision",
@@ -152,8 +152,8 @@ const characters = [
       },
 {
       name: "wolverine",
-          "full name": "James 'Logan' Howlet",
-          alias: [
+          fullName: "James 'Logan' Howlet",
+          aliases: [
               "Logan",
               "Jeremiah Logan",
               "Patch",
@@ -172,7 +172,7 @@ const characters = [
               "John Logan",
               "Jim Logan",
           ],
-          "team affiliation": [
+          teamAffiliations: [
               "X-Men",
               "Avengers",
               "Canadian Army",
@@ -186,7 +186,7 @@ const characters = [
               "X-Force",
           ],
 
-          "first appearance": "The Incredible Hulk #180",
+          firstAppearance: "The Incredible Hulk #180",
           powers: [
               " Enhanced strength, speed, stamina, durability, agility, dexterity, and reaction time",
               "Superhuman senses and animal-like attributes",
@@ -199,9 +199,9 @@ const characters = [
 
        {
          name: "storm",
-          "full name": "Ororo Munroe",
-          alias: ["Storm", "Ororo Iquadi T'Challa"],
-          "team affiliation": [
+          fullName: "Ororo Munroe",
+          aliases: ["Storm", "Ororo Iquadi T'Challa"],
+          teamAffiliations: [
               "X-Men",
               "Avengers",
               "Fantastic Four",
@@ -224,7 +224,7 @@ const characters = [
               "Quiet Council of Krakoa",
               "Marauders",
           ],
-          "first appearance": "Giant-Size X-Men #1",
+          firstAppearance: "Giant-Size X-Men #1",
           powers: [
               "Expert tactician and thief",
               "Psionic ability to manipulate weather patterns over vast area",
@@ -240,9 +240,9 @@ const characters = [
       },
     
    {    name: "banshee",
-          "full name": "Sean Cassidy",
-          alias: "None",
-          "team affiliation": [
+          fullName: "Sean Cassidy",
+          aliases: "None",
+          teamAffiliations: [
               "Interpol",
               "NYPD",
               "Factor Three",
@@ -251,7 +251,7 @@ const characters = [
               "X-Corps",
               "Horsemen of Death",
           ],
-          "first appearance": "The X-Men #28",
+          firstAppearance: "The X-Men #28",
           powers: [
               "Enhanced hearing",
               "Sonic scream",
@@ -261,9 +261,9 @@ const characters = [
       },
 
        {    name: "sunfire",
-          "full name": "Shiro Yoshida",
-          alias: "Famine",
-          "team affiliation": [
+          fullName: "Shiro Yoshida",
+          aliases: "Famine",
+          teamAffiliations: [
               "Avengers Unity Squad",
               "X-Men",
               "Horsemen of Apocalypse",
@@ -274,7 +274,7 @@ const characters = [
               "Big Hero 6",
               "Marauders",
           ],
-          "first appearance": "X-Men #64",
+          firstAppearance: "X-Men #64",
           powers: [
               "Flight",
               "Plasma blasts",
@@ -286,10 +286,10 @@ const characters = [
 
        {
          name: "colossus",
-          "full name": "Piotr 'Peter' Nikolayevich Rasputin",
-          alias: ["Rasputin", "The Proletarian", " Peter Nicholas", "Juggernaut"],
+          fullName: "Piotr 'Peter' Nikolayevich Rasputin",
+          aliases: ["Rasputin", "The Proletarian", " Peter Nicholas", "Juggernaut"],
 
-          "team affiliation": [
+          teamAffiliations: [
               "X-Men",
               "Defenders",
               "Excalibur",
@@ -299,15 +299,15 @@ const characters = [
               "Quiet Council of Krakoa",
           ],
 
-          "first appearance": "	Giant-Size X-Men #1",
+          firstAppearance: "	Giant-Size X-Men #1",
           powers: ["Metal mimicry", "Superhuman strength, stamina, and durability"],
       },
 
        {    name: "thunderbird",
-          "full name": "John Proudstar",
-          alias: "None",
-          "team affiliation": ["X-Men", "United States Marine Corps"],
-          "first appearance": "Giant-Size X-Men #1",
+          fullName: "John Proudstar",
+          aliases: "None",
+          teamAffiliations: ["X-Men", "United States Marine Corps"],
+          firstAppearance: "Giant-Size X-Men #1",
           powers: [
               "Superhuman senses, strength, speed, stamina, and sturdiness",
               "Trained unarmed/hand-to-hand combatant",
@@ -315,8 +315,8 @@ const characters = [
       },
 
        {  name: "magneto",
-          "full name": "Max 'Erik Magnus' Eisenhardt",
-          alias: [
+          fullName: "Max 'Erik Magnus' Eisenhardt",
+          aliases: [
               "Magnus",
               "Erik Lehnsherr",
               "White King (later Grey King) of the Hellfire Club",
@@ -325,7 +325,7 @@ const characters = [
               "Henryk Gurzsky",
               "White Pilgrim",
           ],
-          "team affiliation": [
+          teamAffiliations: [
               "Brotherhood of Mutants",
               "X-Men",
               "New Mutants",
@@ -334,13 +334,13 @@ const characters = [
               "Astonishing Avengers",
               "Quiet Council of Krakoa",
           ],
-          "first appearance": "	The X-Men #1",
+          firstAppearance: "	The X-Men #1",
           powers: "",
       },
 
        { name: "shadowcat",
-          "full name": "Katherine Anne 'Kitty' Pryde",
-          alias: [
+          fullName: "Katherine Anne 'Kitty' Pryde",
+          aliases: [
               "Shadowcat",
               "Ariel",
               "Sprite",
@@ -348,7 +348,7 @@ const characters = [
               "Captain Kate Pryde",
               "Red Queen",
           ],
-          "team affiliation": [
+          teamAffiliations: [
               "All-New X-Men",
               "X-Men",
               "Excalibur",
@@ -357,7 +357,7 @@ const characters = [
               "Guardians of the Galaxy",
               "Quiet Council of Krakoa",
           ],
-          "first appearance": "The Uncanny X-Men #129",
+          firstAppearance: "The Uncanny X-Men #129",
           powers: [
               "Projective intangibility",
               "Intangible disruption",
@@ -369,9 +369,9 @@ const characters = [
       },
 
        { name: "rogue",
-          "full name": "Anna Marie LeBeau",
-          alias: "Anna Raven",
-          "team affiliation": [
+          fullName: "Anna Marie LeBeau",
+          aliases: "Anna Raven",
+          teamAffiliations: [
               "X-Men",
               "Brotherhood of Mutants",
               "Avengers Unity Division",
@@ -379,7 +379,7 @@ const characters = [
               "The Lights",
               "X.S.E",
           ],
-          "first appearance": "Avengers Annual #10",
+          firstAppearance: "Avengers Annual #10",
           powers: [
               "Energy absorption through physical contact",
               "Permanently absorbed powers from Ms. Marvel and Wonder Man",
@@ -390,9 +390,9 @@ const characters = [
       },
 
        { name: "bishop",
-          "full name": "Lucas Bishop",
-          alias: "Archbishop",
-          "team affiliation": [
+          fullName: "Lucas Bishop",
+          aliases: "Archbishop",
+          teamAffiliations: [
               "X-Men",
               "Krakoa's Captains",
               "Marauders (Krakoa pirate crew) (Dawn of X)",
@@ -404,7 +404,7 @@ const characters = [
               "NYPD",
               "X-Treme X-Men",
           ],
-          "first appearance": "The Uncanny X-Men #282",
+          firstAppearance: "The Uncanny X-Men #282",
           powers: [
               "Energy absorption and redirection",
               "Superhuman physical attributes",
@@ -413,14 +413,14 @@ const characters = [
       },
 
        { name: "gambit",
-          "full name": "Remy Etienne LeBeau",
-          alias: [
+          fullName: "Remy Etienne LeBeau",
+          aliases: [
               "Le Diable Blanc",
               "Robert Lord",
               "Death",
               "Ragin' Cajun",
           ],
-          "team affiliation": [
+          teamAffiliations: [
               "X-Factor",
               "X-Men",
               "Marauders",
@@ -430,7 +430,7 @@ const characters = [
               "Thieves' Guild",
               "Crimson Pirates",
           ],
-          "first appearance": "The Uncanny X-Men Annual #14 ",
+          firstAppearance: "The Uncanny X-Men Annual #14 ",
           powers: {
               "as gambit": [
                   "Kinetic energy generation and manipulation",
@@ -454,9 +454,9 @@ const characters = [
 
        {
         name: "jubilee",
-          "full name": "Jubilation 'Jubilee' Lee",
-          alias: "Wondra",
-          "team affiliation": [
+          fullName: "Jubilation 'Jubilee' Lee",
+          aliases: "Wondra",
+          teamAffiliations: [
               "Forgiven",
               "X-Men",
               "Generation X",
@@ -464,7 +464,7 @@ const characters = [
               "New Warriors",
               "Patsy Walker Temp Agency"
           ],
-          "first appearance": "The Uncanny X-Men #244",
+          firstAppearance: "The Uncanny X-Men #244",
           powers: [
               "Pyrotechnic explosive energy blasts",
               "Ability to temporary blind others",
@@ -476,14 +476,14 @@ const characters = [
       },
 
        { name: "white queen",
-          "full name": "Emma Grace Frost",
-          alias: [
+          fullName: "Emma Grace Frost",
+          aliases: [
               "White Queen",
               "The Black Queen",
               "The Black King",
               "Lord Imperial",
           ],
-          "team affiliation": [
+          teamAffiliations: [
               "Hellfire Club",
               "Hellions",
               "Generation X",
@@ -497,7 +497,7 @@ const characters = [
               "Xavier Institute",
               "Marauders",
           ],
-          "first appearance": "The Uncanny X-Men #129",
+          firstAppearance: "The Uncanny X-Men #129",
           powers: [
               "High-level telepathic abilities:",
               "Astral projection",
@@ -525,8 +525,8 @@ const characters = [
       },
 
        {    name: "mystique",
-          "full name": "Raven Darkhölme",
-          alias: [
+          fullName: "Raven Darkhölme",
+          aliases: [
               "Jean Grey",
               "Professor Charles Xavier",
               "Nick Fury",
@@ -546,7 +546,7 @@ const characters = [
               "Victoria Snow",
               "Lonnie Lincoln",
           ],
-          "team affiliation": [
+          teamAffiliations: [
               "Brotherhood of Mutants",
               "X-Men",
               "Astonishing Avengers",
@@ -569,7 +569,7 @@ const characters = [
               "Quiet Council of Krakoa",
 
           ],
-          "first appearance": "Ms. Marvel #16",
+          firstAppearance: "Ms. Marvel #16",
           powers: [
 
               "Enhanced strength, speed, stamina, durability, flexibility, agility, and reflexes",
@@ -582,8 +582,8 @@ const characters = [
       },
 
        { name: "magik",
-          "full name": "Illyana Nikolaievna Rasputina",
-          alias: [
+          fullName: "Illyana Nikolaievna Rasputina",
+          aliases: [
 
               "Darkchilde",
               "Darkchild",
@@ -592,13 +592,13 @@ const characters = [
               "The Darkchilde",
               "Archimage",
           ],
-          "team affiliation": [
+          teamAffiliations: [
               "X-Men",
               "New Mutants",
               "Hellions",
               "Phoenix Five",
           ],
-          "first appearance": "Giant-Size X-Men #1",
+          firstAppearance: "Giant-Size X-Men #1",
           powers: [
               "Psionic shields",
               "Stepping discs:",
@@ -625,22 +625,22 @@ const characters = [
 
       
        { name: "x-23",
-          "full name": "Laura Kinney",
-          alias: [
+          fullName: "Laura Kinney",
+          aliases: [
               "Laura X",
               "Talon",
               "Captain Universe",
               "X-23",
               "Wolverine",
           ],
-          "team affiliation": [
+          teamAffiliations: [
               "Weapon X",
               "X-Men",
               "New X-Men",
               "Avengers Academy",
               "X-Force",
           ],
-          "first appearance": "X-Men: Evolution 'X23'",
+          firstAppearance: "X-Men: Evolution 'X23'",
           powers: [
               "Superhuman strength, durability, senses, reflexes, agility and animal-like attributes",
               "Adamantium-plated retractable claws in hands and feet",
@@ -651,8 +651,8 @@ const characters = [
       },
 
        { name: "legion",
-          "full name": "David Charles Haller",
-          alias: [
+          fullName: "David Charles Haller",
+          aliases: [
               "Daniel Haller",
               "Cyndi",
               "Rodney",
@@ -665,11 +665,11 @@ const characters = [
               "Sylvester",
               "Jemail Karami",
           ],
-          "team affiliation": [
+          teamAffiliations: [
               "Muir Island X-Men",
               "X-Men"
           ],
-          "first appearance": "New Mutants #25",
+          firstAppearance: "New Mutants #25",
           powers: [
 
               "Reality warping",
@@ -683,20 +683,20 @@ const characters = [
       },
 
      { name: "hope",
-          "full name": "Hope Summers",
-          alias: [
+          fullName: "Hope Summers",
+          aliases: [
               "Mutant Messiah",
               "White Phoenix",
               "MeMe",
           ],
-          "team affiliation": [
+          teamAffiliations: [
               "X-Men",
               "The Lights",
               "Jean Grey School Students",
               "X-Force",
               "Quiet Council of Krakoa",
           ],
-          "first appearance": "X-Men #205",
+          firstAppearance: "X-Men #205",
           powers: [
               "Power manipulation",
               "Power mimicry",
@@ -712,9 +712,9 @@ const characters = [
       },
 
        { name: "warlock",
-          "full name": "Warlock",
-          alias: "None",
-          "team affiliation": [
+          fullName: "Warlock",
+          aliases: "None",
+          teamAffiliations: [
               "X-Men",
               "New Mutants",
               "Fallen Angels",
@@ -722,7 +722,7 @@ const characters = [
               "X-Factor",
               "Phalanx",
           ],
-          "first appearance": "The New Mutants #18",
+          firstAppearance: "The New Mutants #18",
           powers: [
               "Shapeshifting",
               "Can turn organic objects and beings into techno-organic matter",
