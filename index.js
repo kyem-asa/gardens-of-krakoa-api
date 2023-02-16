@@ -1,19 +1,16 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 5000;
-const characters = require('./data/Characters')
-const cors = require('cors')
-const characterController = require('./controllers/characters')
-const connectDB = require('./config/database');
-const Character = require('./models/Characters');
-const router = express.Router()
+const characters = require("./data/Characters");
+const cors = require("cors");
+const characterController = require("./controllers/characters");
+const connectDB = require("./config/database");
+const Character = require("./models/Characters");
+const router = express.Router();
 
+require("dotenv").config({ path: "./config/.env" });
 
-
-
-require('dotenv').config({path: './config/.env'})
-
-connectDB()
+connectDB();
 
 characterController.saveCharacters();
 
@@ -25,10 +22,9 @@ router.get("/", (request, response) => {
   response.sendFile(__dirname + "/public/index.html");
 });
 
-router.get("/api/v1", characterController.getAllCharacters)
+router.get("/api/v1", characterController.getAllCharacters);
 
-router.get("/api/v1/:name", characterController.getCharacterByName)
-
+router.get("/api/v1/:name", characterController.getCharacterByName);
 
 app.listen(PORT, () => {
   console.log(`Running on port: ${PORT}`);
