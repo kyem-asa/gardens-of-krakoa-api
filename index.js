@@ -25,26 +25,10 @@ router.get("/", (request, response) => {
   response.sendFile(__dirname + "/public/index.html");
 });
 
-app.get('/api/v1', (request, response) => {
-      Character.find()
-      .then(results => {
-          console.log(results)
-          response.json(results)
-      })
-      .catch(error => console.error(error))
-  })
+router.get("/api/v1", characterController.getAllCharacters)
 
+router.get("/api/v1/:name", characterController.getCharacterByName)
 
-app.get("/api/:name", (request, response) => {
-  const name = request.params.name.toLowerCase();
-  const character = characters.find((char) => char.name === name);
-
-  if (character) {
-    response.send({character})
-  } else {
-    response.send(`Couldn't find a member of the X-Men named ${name}`)
-  }
-});
 
 app.listen(PORT, () => {
   console.log(`Running on port: ${PORT}`);
