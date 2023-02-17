@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 5000;
+
 const characters = require("./data/Characters");
 const cors = require("cors");
 const characterController = require("./controllers/characters");
@@ -26,8 +26,7 @@ router.get("/api/v1", characterController.getAllCharacters);
 
 router.get("/api/v1/:name", characterController.getCharacterByName);
 
-app.listen(PORT, () => {
-  console.log(`Running on port: ${PORT}`);
-});
+app.listen(process.env.PORT, ()=>{
+  console.log('Server is running, you better catch it!')
+})    
 
-module.exports = app;
