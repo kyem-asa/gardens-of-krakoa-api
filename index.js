@@ -1,32 +1,32 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 5000;
-const characters = require('./data/Characters')
-const cors = require('cors')
+const PORT = process.env.PORT || 7777;
+const characters = require("./data/Characters");
+const cors = require("cors");
+const characterController = require("./controllers/characters");
+const connectDB = require("./config/database");
+const Character = require("./models/Characters");
+const router = express.Router();
+const dotenv = require("dotenv");
+require("dotenv").config({ path: "./config/.env" });
 
-app.use(cors());
+connectDB();
 
-app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/index.html");
+characterController.saveCharacters();
+
+// Routes
+
+app.use(router);
+
+router.get("/", (request, response) => {
+  response.sendFile(__dirname + "/public/index.html");
 });
 
-app.get("/api", (request, response) => {
-  response.json(characters)
-});
+router.get("/api/v1", characterController.getAllCharacters);
 
-app.get("/api/:name", (request, response) => {
-  const name = request.params.name.toLowerCase();
-  const character = characters.find((char) => char.name === name);
+router.get("/api/v1/:name", characterController.getCharacterByName);
 
-  if (character) {
-    response.send({character})
-  } else {
-    response.send(`Couldn't find a member of the X-Men named ${name}`)
-  }
-});
-
-app.listen(PORT, () => {
-  console.log(`Running on port: ${PORT}`);
-});
-
-module.exports = app;
+app.listen(
+  PORT,
+  console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
+);
