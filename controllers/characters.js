@@ -27,9 +27,8 @@ module.exports = {
   getCharacterByName: async (request, response) => {
     try {
       const name = request.params.name.toLowerCase();
-      console.log(name);
       const results = await Character.find({ name: name });
-      response.json(results)
+      response.json(results);
     } catch (error) {
       console.error(error);
     }

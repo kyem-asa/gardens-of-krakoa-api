@@ -7,7 +7,7 @@ const characterController = require("./controllers/characters");
 const connectDB = require("./config/database");
 const Character = require("./models/Characters");
 const router = express.Router();
-const dotenv = require('dotenv')
+const dotenv = require("dotenv");
 require("dotenv").config({ path: "./config/.env" });
 
 connectDB();
@@ -29,6 +29,4 @@ router.get("/api/v1/:name", characterController.getCharacterByName);
 app.listen(
   PORT,
   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
-)
-
-module.exports = app;
+);
