@@ -10,6 +10,8 @@ const router = express.Router();
 const dotenv = require("dotenv");
 require("dotenv").config({ path: "./config/.env" });
 
+app.use(cors())
+
 connectDB();
 
 characterController.saveCharacters();
